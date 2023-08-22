@@ -8,7 +8,7 @@ variable "rules" {
   type = list(object({
     direction   = string
     protocol    = string
-    port        = optional(number)
+    port        = optional(string)
     source_ips  = list(string)
     description = optional(string)
   }))
